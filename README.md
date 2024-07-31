@@ -61,10 +61,10 @@ Authentication involves verifying the user's identity. In a JWT-based system, th
 
 Client Stores JWT:
 - The client stores the JWT, typically in local storage or cookies.
-- 
+  
 Client Sends JWT in Requests:
 - For subsequent requests, the client sends the JWT in the Authorization header, prefixed with Bearer.
-- 
+  
 Server Validates JWT:
 - The server intercepts the request with a filter (e.g., JwtAuthenticationFilter).
 - The filter extracts the JWT from the header and validates it.
