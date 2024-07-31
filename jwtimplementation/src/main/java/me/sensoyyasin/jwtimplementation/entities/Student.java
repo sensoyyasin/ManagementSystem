@@ -30,6 +30,14 @@ public class Student {
     @JsonIgnoreProperties("courses") // veya @JsonBackReference
     private List<Course> courses = new ArrayList<>();
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }

@@ -1,5 +1,6 @@
 package me.sensoyyasin.jwtimplementation.services;
 
+import me.sensoyyasin.jwtimplementation.configs.AdminConfiguration;
 import me.sensoyyasin.jwtimplementation.dtos.LoginUserDto;
 import me.sensoyyasin.jwtimplementation.dtos.RegisterUserDto;
 import me.sensoyyasin.jwtimplementation.entities.Roles;
@@ -19,15 +20,17 @@ public class AuthenticationService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
+    private final AdminConfiguration adminConfiguration;
 
     public AuthenticationService(
             UserRepository userRepository,
             AuthenticationManager authenticationManager,
-            PasswordEncoder passwordEncoder
-    ) {
+            PasswordEncoder passwordEncoder,
+            AdminConfiguration adminConfiguration) {
         this.userRepository = userRepository;
         this.authenticationManager = authenticationManager;
         this.passwordEncoder = passwordEncoder;
+        this.adminConfiguration = adminConfiguration;
     }
 
     public User signup(RegisterUserDto input) {
@@ -42,10 +45,12 @@ public class AuthenticationService {
 
         Set<Roles> roles = new HashSet<>();
 
-        if (input.getEmail().equals("admin@gmail.com") && input.getPassword().equals("admin"))
+        if (input.getEmail().equals(adminConfiguration.getAdminEmail()) &&
+                input.getPassword().equals(adminConfiguration.getAdminPassword())) {
             roles.add(Roles.ROLE_ADMIN);
-        else
+        } else {
             roles.add(Roles.ROLE_USER);
+        }
 
         user.setRoles(roles);
         return userRepository.save(user);

@@ -4,9 +4,11 @@ public enum CourseType {
     MATHEMATICS,
     PHYSICS,
     BIOLOGY,
+    CHEMISTRY,
     COMPUTER_SCIENCE,
-    QUANTUM,
-    CODING,
+    ELECTRONICS,
+    HISTORY,
+    LITERATURE,
     ART,
-    SCIENCE
+    MUSIC
 }
