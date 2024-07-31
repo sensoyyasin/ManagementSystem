@@ -4,6 +4,8 @@
 
 This project is a Student Management System built with Spring Boot, leveraging JSON Web Tokens (JWT) for secure authentication and authorization. The system allows users to manage students, courses, and users efficiently while ensuring robust security through JWT-based access control.
 
+![Designer-3](https://github.com/user-attachments/assets/1dbd2b7e-7047-4f63-ba83-dcc317ed4373)
+
 
 # Features
 
@@ -32,6 +34,7 @@ Endpoints:
 - POST, PUT, DELETE requests - Accessible only by ADMIN role.
 - CORS Configuration: Allows requests from http://localhost:8080 and http://localhost:3000.
 
+
 # Dependencies
 
 - Spring Boot Starter Data JPA
@@ -40,6 +43,43 @@ Endpoints:
 - PostgreSQL Driver
 - JJWT Library for JWT handling
 
+# JWT-Based Authentication and Authorization
+
+![JWT-Implementation-Scheme](https://github.com/user-attachments/assets/383fab8f-1c6f-42ac-86bc-617120def68b)
+
+
+JSON Web Token (JWT) is a compact, URL-safe token used for securely transmitting information between parties. It contains encoded JSON objects, including claims (user information and metadata). JWTs are commonly used in authentication and authorization processes in web applications.
+
+1. JWT Authentication
+
+Authentication involves verifying the user's identity. In a JWT-based system, the process generally works as follows:
+
+- User Login:
+- The user provides their credentials (e.g., username and password).
+- The server verifies these credentials.
+- If valid, the server generates a JWT containing user information and sends it back to the client.
+
+Client Stores JWT:
+- The client stores the JWT, typically in local storage or cookies.
+- 
+Client Sends JWT in Requests:
+- For subsequent requests, the client sends the JWT in the Authorization header, prefixed with Bearer.
+- 
+Server Validates JWT:
+- The server intercepts the request with a filter (e.g., JwtAuthenticationFilter).
+- The filter extracts the JWT from the header and validates it.
+- If the token is valid, the server authenticates the user by setting the SecurityContext.
+
+2. JWT-Based Authorization
+
+Authorization determines what resources a user can access based on their role or permissions. In a JWT-based system:
+
+Roles in JWT:
+- The JWT may contain roles or claims specifying user permissions.
+- For example, a token might include a claim that says role: ADMIN.
+- Access Control:
+- Based on roles, the server enforces access control rules.
+- For example, ADMIN may have access to all resources, while USER might only have access to read data.
 
 
 # Architecture Diagram
