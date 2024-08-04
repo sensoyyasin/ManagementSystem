@@ -4,8 +4,6 @@
 
 This project is a Student Management System built with Spring Boot, leveraging JSON Web Tokens (JWT) for secure authentication and authorization. The system allows users to manage students, courses, and users efficiently while ensuring robust security through JWT-based access control.
 
-![Designer-3](https://github.com/user-attachments/assets/81f7a61b-d97a-4fe4-8a57-b3556c362b07)
-
 
 # Features
 
