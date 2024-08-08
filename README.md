@@ -43,8 +43,6 @@ Endpoints:
 
 # JWT-Based Authentication and Authorization
 
-![JWT-Implementation-Scheme](https://github.com/user-attachments/assets/383fab8f-1c6f-42ac-86bc-617120def68b)
-
 
 JSON Web Token (JWT) is a compact, URL-safe token used for securely transmitting information between parties. It contains encoded JSON objects, including claims (user information and metadata). JWTs are commonly used in authentication and authorization processes in web applications.
 
