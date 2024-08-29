@@ -1,5 +1,102 @@
 # JWT Implementation for Student Management System
 
+
+# JWT Backend Application
+
+## Description
+
+The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT (JSON Web Token) for authentication and authorization. The project follows the CRUD (Create, Read, Update, Delete) architecture and integrates with a PostgreSQL database. It is configured with Spring Cloud for centralized configuration management and Docker for containerization.
+
+## Features
+
+- JWT-based authentication and authorization
+- CRUD operations for managing entities
+- Integration with PostgreSQL for data persistence
+- Centralized configuration using Spring Cloud Config
+- Docker support for containerization and deployment
+
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Configuration](#configuration)
+- [Docker Usage](#docker-usage)
+- [Build and Run](#build-and-run)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Structure
+
+The project is organized as follows:
+
+- **`JwtBackendApplication.java`**: The main entry point of the Spring Boot application.
+- **`configs/`**: Contains configuration classes for application settings and security.
+- **`controllers/`**: Contains REST controllers that handle HTTP requests and responses.
+- **`dtos/`**: Data Transfer Objects for transferring data between layers.
+- **`entities/`**: JPA entities that map to database tables.
+- **`exceptions/`**: Custom exception classes for error handling.
+- **`repositories/`**: Spring Data JPA repositories for data access.
+- **`responses/`**: Classes for handling responses and data encapsulation.
+- **`services/`**: Business logic and service layer components.
+
+## Getting Started
+
+To get started with the JWT Backend Application, follow these steps:
+
+### Prerequisites
+
+- Java 17
+- Maven
+- Docker and Docker Compose
+
+### Configuration
+
+1. **Environment Variables:** Create a `.env` file in the root directory with the following environment variables:
+   ```properties
+   SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5434/mydatabase
+   SPRING_DATASOURCE_USERNAME=username
+   SPRING_DATASOURCE_PASSWORD=password
+   POSTGRES_DB=mydatabase
+   POSTGRES_USER=username
+   POSTGRES_PASSWORD=password
+
+Docker Usage
+To build and run the application using Docker, follow these steps:
+
+Start Services with Docker Compose:
+docker-compose up or docker-compose up --builc
+This command will start all required services, including the backend, frontend, PostgreSQL database, and config server.
+
+Service Endpoints:
+
+Backend: http://localhost:8080
+Frontend: http://localhost:3000
+Config Server: http://localhost:8181
+
+Build and Run
+To build and run the application locally without Docker:
+
+Build with Maven:
+
+mvn clean package
+
+Run the Application:
+
+java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
+
+Contributing
+If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -am 'Add new feature').
+Push your branch (git push origin feature-branch).
+Create a Pull Request.
+
+
+
+
+
 # Overview
 
 This project is a Student Management System built with Spring Boot, leveraging JSON Web Tokens (JWT) for secure authentication and authorization. The system allows users to manage students, courses, and users efficiently while ensuring robust security through JWT-based access control.
