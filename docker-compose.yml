@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  config-server:
+    image: config-server
+    ports:
+      - "8181:8181"
+    networks:
+      - spring-postgres
+
+  backend:
+    build:
+      context: .  # Ana dizin
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_APPLICATION_NAME: student-backend-app
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_CONFIG_IMPORT: optional:configserver:http://config-server:8181
+    depends_on:
+      - config-server
+      - db
+    #restart: on-failure
+    healthcheck:
+      test: ["CMD", "sh", "/status.sh"]
+      start_period: 5s
+      interval: 30s     # every 30 second it tries
+      retries: 2       # if replace 2 times, marked as an unhealthy
+    networks:
+      - spring-postgres
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5434:5432"  # Harici port 5434, konteyner içindeki port 5432
+    networks:
+      - spring-postgres
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - spring-postgres
+
+networks:
+  spring-postgres:
+    driver: bridge
