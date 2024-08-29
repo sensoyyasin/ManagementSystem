@@ -83,3 +83,27 @@ Roles in JWT:
 # Architecture Diagram
 
 ![backend-walpaper](https://github.com/user-attachments/assets/81b1659a-524e-42b7-91b5-dd522e51db1e)
+
+
+# Frontend - Reactjs
+
+<img width="1361" alt="Ekran Resmi 2024-08-29 22 25 36" src="https://github.com/user-attachments/assets/98a33d77-b3af-427b-99b3-cbf22e01f332">
+
+<img width="1372" alt="Ekran Resmi 2024-08-29 22 25 45" src="https://github.com/user-attachments/assets/8b04957c-7abc-4814-9dd6-eac20fdd266f">
+
+<img width="478" alt="Ekran Resmi 2024-08-29 22 25 52" src="https://github.com/user-attachments/assets/c24e3e6b-09d2-47ab-b164-b36e2554e075">
+
+<img width="1366" alt="Ekran Resmi 2024-08-29 22 26 04" src="https://github.com/user-attachments/assets/2dc1da42-e1ff-4d3a-8df7-7d1d737e23ce">
+
+<img width="1369" alt="Ekran Resmi 2024-08-29 22 26 33" src="https://github.com/user-attachments/assets/60a22e65-4327-4d78-9f78-d57b7d02e155">
+
+<img width="1372" alt="Ekran Resmi 2024-08-29 22 26 51" src="https://github.com/user-attachments/assets/f4dce3d3-c1e6-4c9b-9547-888258039d2f">
+
+<img width="1379" alt="Ekran Resmi 2024-08-29 22 26 22" src="https://github.com/user-attachments/assets/ca4414b6-dd36-4426-828e-8cb080f5e97c">
+
+
+
+
+
+
+
