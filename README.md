@@ -82,4 +82,4 @@ Roles in JWT:
 
 # Architecture Diagram
 
-![architecture-diagram](https://github.com/user-attachments/assets/20a542fd-cddb-4301-8864-19aab199bdd5)
+![backend-walpaper](https://github.com/user-attachments/assets/81b1659a-524e-42b7-91b5-dd522e51db1e)
