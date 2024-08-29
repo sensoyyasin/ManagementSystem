@@ -87,8 +87,6 @@ Roles in JWT:
 
 # Frontend - Reactjs
 
-<img width="700" alt="Ekran Resmi 2024-08-29 22 25 52" src="https://github.com/user-attachments/assets/c24e3e6b-09d2-47ab-b164-b36e2554e075">
-
 <img width="1300" alt="Ekran Resmi 2024-08-29 22 25 36" src="https://github.com/user-attachments/assets/98a33d77-b3af-427b-99b3-cbf22e01f332">
 
 <img width="1300" alt="Ekran Resmi 2024-08-29 22 25 45" src="https://github.com/user-attachments/assets/8b04957c-7abc-4814-9dd6-eac20fdd266f">
