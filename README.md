@@ -1,8 +1,5 @@
 # JWT Implementation for Student Management System
 
-
-# JWT Backend Application
-
 ## Description
 
 The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT (JSON Web Token) for authentication and authorization. The project follows the CRUD (Create, Read, Update, Delete) architecture and integrates with a PostgreSQL database. It is configured with Spring Cloud for centralized configuration management and Docker for containerization.
@@ -33,7 +30,7 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 - [JWT-Based Authentication and Authorization](#jwt-based-authentication)
 - [Spring Architecture](#spring-architecture)
 - [Architecture Diagram](#architecture-diagram)
-- [Frontend - Reactjs](#frontend)
+- [Frontend - Reactjs](#frontend-reactjs)
 
 
 ## Project Structure
@@ -123,7 +120,7 @@ We have included screenshots demonstrating how each request was made and the res
 
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 09 19" src="https://github.com/user-attachments/assets/9b7812fd-4a8c-452e-b0f0-7c8a89a82235">
 
-# Technologies
+### Technologies
 
 - Spring Boot: A comprehensive framework that simplifies the development of Java-based applications by providing out-of-the-box support for creating production-ready applications with minimal configuration. Spring Boot enables rapid development and deployment with built-in features for dependency management, embedded servers, and configuration.
 - Spring Security: A powerful and flexible framework for securing Java applications. Spring Security provides robust mechanisms for authentication and authorization, protecting against various security threats. It integrates seamlessly with JWT to handle secure login processes and control access to different parts of the application.
@@ -135,7 +132,7 @@ We have included screenshots demonstrating how each request was made and the res
 - Hibernate: An ORM framework that implements JPA and extends its capabilities with additional features. Hibernate handles the mapping between Java objects and database tables, providing support for advanced querying, caching, and transaction management. It enhances the efficiency and flexibility of database interactions.
 - Spring Cloud: A suite of tools designed for building and managing cloud-native applications. Spring Cloud offers capabilities for configuration management, service discovery, and distributed systems. In this project, Spring Cloud is used to dynamically fetch configuration properties from a GitHub repository, facilitating centralized management and seamless updates.
 
-# Dependencies
+### Dependencies
 
 - Spring Boot Starter Data JPA
 - Spring Boot Starter Security
@@ -143,7 +140,7 @@ We have included screenshots demonstrating how each request was made and the res
 - PostgreSQL Driver
 - JJWT Library for JWT handling
 
-# JWT-Based Authentication and Authorization
+### JWT-Based Authentication and Authorization
 
 ![JWT-Implementation-Scheme](https://github.com/user-attachments/assets/383fab8f-1c6f-42ac-86bc-617120def68b)
 
@@ -181,17 +178,17 @@ Roles in JWT:
 - Based on roles, the server enforces access control rules.
 - For example, ADMIN may have access to all resources, while USER might only have access to read data.
 
-# Spring Architect
+### Spring Architect
 
 <img width="793" alt="Spring-Architect" src="https://github.com/user-attachments/assets/a463fe44-d528-4332-bb80-35c37043ccad">
 
 
-# Architecture Diagram
+### Architecture Diagram
 
 ![backend-walpaper](https://github.com/user-attachments/assets/81b1659a-524e-42b7-91b5-dd522e51db1e)
 
 
-# Frontend - Reactjs
+### Frontend - Reactjs
 
 <img width="1300" alt="Ekran Resmi 2024-08-29 22 25 36" src="https://github.com/user-attachments/assets/98a33d77-b3af-427b-99b3-cbf22e01f332">
 
