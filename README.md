@@ -121,13 +121,21 @@ We have included screenshots demonstrating how each request was made and the res
 ## Technologies ⚡
 
 - Spring Boot: A comprehensive framework that simplifies the development of Java-based applications by providing out-of-the-box support for creating production-ready applications with minimal configuration. Spring Boot enables rapid development and deployment with built-in features for dependency management, embedded servers, and configuration.
+  
 - Spring Security: A powerful and flexible framework for securing Java applications. Spring Security provides robust mechanisms for authentication and authorization, protecting against various security threats. It integrates seamlessly with JWT to handle secure login processes and control access to different parts of the application.
+  
 - PostgreSQL: An advanced, open-source relational database management system known for its reliability and performance. PostgreSQL supports complex queries, transactional integrity, and extensibility, making it ideal for handling structured data and ensuring data consistency in a multi-user environment.
+  
 - JWT (JSON Web Tokens): A compact, URL-safe method for representing claims to be transferred between two parties. JWTs are used for securely transmitting information, such as user authentication tokens, ensuring that data can be verified and trusted. This project uses JWT for managing user sessions and authorizing access to various resources.
+  
 - Docker: A containerization platform that allows developers to package applications and their dependencies into portable containers. Docker ensures that applications run consistently across different environments by isolating them from the underlying infrastructure, which simplifies deployment and scaling.
+  
 - Docker Compose: A tool for defining and running multi-container Docker applications. With Docker Compose, you can configure and manage multiple services (e.g., application, database) using a single YAML file. It automates the process of setting up and managing these services, streamlining the development and deployment workflow.
+  
 - JPA (Java Persistence API): A specification for managing relational data in Java applications. JPA provides a standard approach to object-relational mapping (ORM), allowing developers to interact with the database using Java objects. It simplifies data access and management, reducing boilerplate code and improving maintainability.
+  
 - Hibernate: An ORM framework that implements JPA and extends its capabilities with additional features. Hibernate handles the mapping between Java objects and database tables, providing support for advanced querying, caching, and transaction management. It enhances the efficiency and flexibility of database interactions.
+  
 - Spring Cloud: A suite of tools designed for building and managing cloud-native applications. Spring Cloud offers capabilities for configuration management, service discovery, and distributed systems. In this project, Spring Cloud is used to dynamically fetch configuration properties from a GitHub repository, facilitating centralized management and seamless updates.
 
 ## Dependencies
