@@ -10,7 +10,7 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 - JPA (Java Persistence API): 🗃️ Used for managing relational data in Java applications.
 - JDBC (Java Database Connectivity): 🔗 Represents connectivity between Java and databases.
 - Hibernate: 🧩 ORM framework used to map Java objects to database tables.
-- JWT-based Authentication and Authorization: 🔒 Represents security and authentication
+- JWT-based Authentication and Authorization: 🔒🔑 Represents security and authentication
 - CRUD Operations: 🔄 Represents the Create, Read, Update, Delete operations.
 - PostgreSQL: 🐘 Relational database for data persistence.
 - Spring Cloud Config: ☁️ Represents cloud-based configuration management
@@ -52,9 +52,9 @@ To get started with the JWT Backend Application, follow these steps:
 
 ## Prerequisites
 
-- Java 17
-- Maven
-- Docker and Docker Compose
+- Java 17 ☕
+- Maven 🔧
+- Docker and Docker Compose 🐳📦
 
 ## Configuration
 
