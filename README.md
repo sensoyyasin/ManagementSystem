@@ -187,7 +187,7 @@ Roles in JWT:
 ![backend-walpaper](https://github.com/user-attachments/assets/81b1659a-524e-42b7-91b5-dd522e51db1e)
 
 
-## Frontend Reactjs
+## Frontend
 
 In the frontend section, there are signin and signup pages. If the user already exists in the database, they can log in directly; otherwise, they need to register as a new user. After logging in, if the user is not an admin, they can view all student information but cannot modify it. An admin, on the other hand, can add students, delete students, modify student information, and manage course enrollments and withdrawals for students.
 
