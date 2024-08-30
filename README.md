@@ -88,9 +88,9 @@ java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
 
 ## postman
 
-<img width="1000" alt="Ekran Resmi 2024-08-29 23 08 28" src="https://github.com/user-attachments/assets/b418b6d8-9850-47cd-9cf5-9d228aded0e6">
-
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 07 52" src="https://github.com/user-attachments/assets/a388f5f9-9dc1-4339-be46-56d2faac91ac">
+
+<img width="1000" alt="Ekran Resmi 2024-08-29 23 08 28" src="https://github.com/user-attachments/assets/b418b6d8-9850-47cd-9cf5-9d228aded0e6">
 
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 09 19" src="https://github.com/user-attachments/assets/9b7812fd-4a8c-452e-b0f0-7c8a89a82235">
 
