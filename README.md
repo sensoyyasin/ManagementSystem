@@ -6,16 +6,16 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 
 ## Features
 
-- Spring Boot: Framework used to build the backend application.
-- JPA (Java Persistence API): Used for managing relational data in Java applications.
-- JDBC (Java Database Connectivity): Provides a standard API for connecting to relational databases.
-- Hibernate: ORM framework used to map Java objects to database tables.
-- JWT-based Authentication and Authorization: Secure handling of user sessions and access control.
-- CRUD Operations: For managing entities like students, courses, and users.
-- PostgreSQL: Relational database for data persistence.
-- Spring Cloud Config: Centralized configuration
-- Docker: Containerization platform used to ensure consistent development and deployment environments.
-- Docker Compose: Tool for defining and running multi-container Docker applications.
+- Spring Boot: 🌱 Represents the "Spring" part and the idea of growth and development.
+- JPA (Java Persistence API): 🗃️ Used for managing relational data in Java applications.
+- JDBC (Java Database Connectivity): 🔗 Represents connectivity between Java and databases.
+- Hibernate: 🧩 ORM framework used to map Java objects to database tables.
+- JWT-based Authentication and Authorization: 🔒 Represents security and authentication
+- CRUD Operations: 🔄 Represents the Create, Read, Update, Delete operations.
+- PostgreSQL: 🐘 Relational database for data persistence.
+- Spring Cloud Config: ☁️ Represents cloud-based configuration management
+- Docker: 🐳 Represents containerization with Docker.
+- Docker Compose: 📦 Represents packaging and managing multiple containers
 
 ## Table of Contents
 
@@ -99,8 +99,7 @@ Build with Maven:
 
 Run the Application:
 
-- java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
-
+- mvn install
 
 ## Postman
 
@@ -119,7 +118,7 @@ We have included screenshots demonstrating how each request was made and the res
 
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 09 19" src="https://github.com/user-attachments/assets/9b7812fd-4a8c-452e-b0f0-7c8a89a82235">
 
-## Technologies
+## Technologies ⚡
 
 - Spring Boot: A comprehensive framework that simplifies the development of Java-based applications by providing out-of-the-box support for creating production-ready applications with minimal configuration. Spring Boot enables rapid development and deployment with built-in features for dependency management, embedded servers, and configuration.
 - Spring Security: A powerful and flexible framework for securing Java applications. Spring Security provides robust mechanisms for authentication and authorization, protecting against various security threats. It integrates seamlessly with JWT to handle secure login processes and control access to different parts of the application.
