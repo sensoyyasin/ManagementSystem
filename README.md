@@ -25,13 +25,12 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 - [Docker Usage](#docker-usage)
 - [Build and Run](#build-and-run)
 - [Postman](#postman)
-- [Security Configuration](#security-configuration)
+- [Technologies](#technologies)
 - [Dependencies](#dependencies)
-- [JWT-Based Authentication and Authorization](#jwt-based-authentication)
-- [Spring Architecture](#spring-architecture)
+- [JWT-Based Authentication and Authorization](#jwt-based-authentication-and-authorization)
+- [Spring Architect](#spring-architect)
 - [Architecture Diagram](#architecture-diagram)
 - [Frontend - Reactjs](#frontend-reactjs)
-
 
 ## Project Structure
 
