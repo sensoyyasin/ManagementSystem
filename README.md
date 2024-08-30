@@ -30,7 +30,7 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 - [JWT-Based Authentication and Authorization](#jwt-based-authentication-and-authorization)
 - [Spring Architect](#spring-architect)
 - [Architecture Diagram](#architecture-diagram)
-- [Frontend - Reactjs](#frontend-reactjs)
+- [Frontend  Reactjs](#frontend-reactjs)
 
 ## Project Structure
 
@@ -187,7 +187,7 @@ Roles in JWT:
 ![backend-walpaper](https://github.com/user-attachments/assets/81b1659a-524e-42b7-91b5-dd522e51db1e)
 
 
-## Frontend - Reactjs
+## Frontend Reactjs
 
 <img width="1300" alt="Ekran Resmi 2024-08-29 22 25 36" src="https://github.com/user-attachments/assets/98a33d77-b3af-427b-99b3-cbf22e01f332">
 
