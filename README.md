@@ -9,11 +9,16 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 
 ## Features
 
-- JWT-based authentication and authorization
-- CRUD operations for managing entities
-- Integration with PostgreSQL for data persistence
-- Centralized configuration using Spring Cloud Config
-- Docker support for containerization and deployment
+- Spring Boot: Framework used to build the backend application.
+- JPA (Java Persistence API): Used for managing relational data in Java applications.
+- JDBC (Java Database Connectivity): Provides a standard API for connecting to relational databases.
+- Hibernate: ORM framework used to map Java objects to database tables.
+- JJWT-based Authentication and Authorization: Secure handling of user sessions and access control.
+- CRUD Operations: For managing entities like students, courses, and users.
+- PostgreSQL: Relational database for data persistence.
+- Spring Cloud Config: Centralized configuration
+- Docker: Containerization platform used to ensure consistent development and deployment environments.
+- Docker Compose: Tool for defining and running multi-container Docker applications.
 
 ## Table of Contents
 
@@ -23,8 +28,13 @@ The JWT Backend Application is a Spring Boot-based RESTful API that utilizes JWT
 - [Docker Usage](#docker-usage)
 - [Build and Run](#build-and-run)
 - [Postman](#postman)
-- [Contributing](#contributing)
-- [License](#license)
+- [Security Configuration](#security-configuration)
+- [Dependencies](#dependencies)
+- [JWT-Based Authentication and Authorization](#jwt-based-authentication)
+- [Spring Architecture](#spring-architecture)
+- [Architecture Diagram](#architecture-diagram)
+- [Frontend - Reactjs](#frontend)
+
 
 ## Project Structure
 
@@ -61,32 +71,51 @@ To get started with the JWT Backend Application, follow these steps:
    POSTGRES_USER=username
    POSTGRES_PASSWORD=password
 
-Docker Usage
+### Docker Usage
+
 To build and run the application using Docker, follow these steps:
 
 Start Services with Docker Compose:
-docker-compose up or docker-compose up --builc
+
+docker-compose up
+
+or if you need to build images first:
+
+docker-compose up --build
+
 This command will start all required services, including the backend, frontend, PostgreSQL database, and config server.
 
 Service Endpoints:
 
-Backend: http://localhost:8080
-Frontend: http://localhost:3000
-Config Server: http://localhost:8181
+- Backend: http://localhost:8080
 
-Build and Run
+- Frontend: http://localhost:3000
+
+- Config Server: http://localhost:8181
+
+### Build and Run
+
 To build and run the application locally without Docker:
 
 Build with Maven:
 
-mvn clean package
+- mvn clean package
 
 Run the Application:
 
-java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
+- java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
 
 
-## postman
+## Postman
+
+Our backend controller includes GET, POST, PUT, and DELETE methods, adhering to the CRUD architecture. Since the client-side was not ready at the beginning, we used Postman to send requests to the backend. Below are screenshots of the requests we made, along with explanations of why each request was sent.
+
+- GET: Used to retrieve data. For example, to list user information or view a specific record, we used GET requests.
+- POST: Used to add new data. For example, to create a new user record or add a new product, we used POST requests.
+- PUT: Used to update existing data. For example, to update user information or modify product details, we used PUT requests.
+- DELETE: Used to remove existing data. For example, to delete a user or remove a product record, we used DELETE requests.
+  
+We have included screenshots demonstrating how each request was made and the responses we received. These images will help you understand how each method works and how the backend handled these requests.
 
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 07 52" src="https://github.com/user-attachments/assets/a388f5f9-9dc1-4339-be46-56d2faac91ac">
 
@@ -94,51 +123,17 @@ java -jar target/jwt-backend-0.0.1-SNAPSHOT.jar
 
 <img width="1000" alt="Ekran Resmi 2024-08-29 23 09 19" src="https://github.com/user-attachments/assets/9b7812fd-4a8c-452e-b0f0-7c8a89a82235">
 
-Contributing
-If you'd like to contribute to this project, please follow these steps:
-
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -am 'Add new feature').
-Push your branch (git push origin feature-branch).
-Create a Pull Request.
-
-
-
-
-
-# Overview
-
-This project is a Student Management System built with Spring Boot, leveraging JSON Web Tokens (JWT) for secure authentication and authorization. The system allows users to manage students, courses, and users efficiently while ensuring robust security through JWT-based access control.
-
-
-# Features
-
-- User Authentication: Secure login and registration with JWT. After logging in, users can make authenticated requests using JWT tokens.
-- Role-Based Access Control: Differentiated access permissions for ADMIN and USER roles.
-- Course Management: Manage courses associated with students.
-- User Management: Create and manage users with different roles and permissions.
-- Database Integration: Uses PostgreSQL for data persistence.
-
-
 # Technologies
 
-- Spring Boot: For building the backend application.
-- Spring Security: For securing the application using JWT.
-- PostgreSQL: For the relational database management.
-- JWT (JSON Web Tokens): For handling authentication and authorization.
-
-
-
-# Security Configuration
-The security configuration is set to use JWT for authentication and authorization:
-
-Endpoints:
-- /auth/** - Public endpoints (no authentication required).
-- GET requests - Accessible by both ADMIN and USER roles.
-- POST, PUT, DELETE requests - Accessible only by ADMIN role.
-- CORS Configuration: Allows requests from http://localhost:8080 and http://localhost:3000.
-
+- Spring Boot: A comprehensive framework that simplifies the development of Java-based applications by providing out-of-the-box support for creating production-ready applications with minimal configuration. Spring Boot enables rapid development and deployment with built-in features for dependency management, embedded servers, and configuration.
+- Spring Security: A powerful and flexible framework for securing Java applications. Spring Security provides robust mechanisms for authentication and authorization, protecting against various security threats. It integrates seamlessly with JWT to handle secure login processes and control access to different parts of the application.
+- PostgreSQL: An advanced, open-source relational database management system known for its reliability and performance. PostgreSQL supports complex queries, transactional integrity, and extensibility, making it ideal for handling structured data and ensuring data consistency in a multi-user environment.
+- JWT (JSON Web Tokens): A compact, URL-safe method for representing claims to be transferred between two parties. JWTs are used for securely transmitting information, such as user authentication tokens, ensuring that data can be verified and trusted. This project uses JWT for managing user sessions and authorizing access to various resources.
+- Docker: A containerization platform that allows developers to package applications and their dependencies into portable containers. Docker ensures that applications run consistently across different environments by isolating them from the underlying infrastructure, which simplifies deployment and scaling.
+- Docker Compose: A tool for defining and running multi-container Docker applications. With Docker Compose, you can configure and manage multiple services (e.g., application, database) using a single YAML file. It automates the process of setting up and managing these services, streamlining the development and deployment workflow.
+- JPA (Java Persistence API): A specification for managing relational data in Java applications. JPA provides a standard approach to object-relational mapping (ORM), allowing developers to interact with the database using Java objects. It simplifies data access and management, reducing boilerplate code and improving maintainability.
+- Hibernate: An ORM framework that implements JPA and extends its capabilities with additional features. Hibernate handles the mapping between Java objects and database tables, providing support for advanced querying, caching, and transaction management. It enhances the efficiency and flexibility of database interactions.
+- Spring Cloud: A suite of tools designed for building and managing cloud-native applications. Spring Cloud offers capabilities for configuration management, service discovery, and distributed systems. In this project, Spring Cloud is used to dynamically fetch configuration properties from a GitHub repository, facilitating centralized management and seamless updates.
 
 # Dependencies
 
@@ -185,6 +180,10 @@ Roles in JWT:
 - Access Control:
 - Based on roles, the server enforces access control rules.
 - For example, ADMIN may have access to all resources, while USER might only have access to read data.
+
+# Spring Architect
+
+<img width="793" alt="Spring-Architect" src="https://github.com/user-attachments/assets/a463fe44-d528-4332-bb80-35c37043ccad">
 
 
 # Architecture Diagram
