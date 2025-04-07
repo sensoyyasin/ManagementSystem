@@ -1,14 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        GITHUB_TOKEN = credentials('Jenkins') 
-    }
-
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'Jenkins', url: 'https://github.com/sensoyyasin/ManagementSystem.git'
+                git url: 'https://github.com/sensoyyasin/ManagementSystem.git', branch: 'main'
             }
         }
 
